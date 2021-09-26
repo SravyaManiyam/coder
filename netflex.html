@@ -1,0 +1,346 @@
+<html>
+    <head>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+        <style>
+            body{
+                margin: 0px;
+                padding: 0px;
+                background-color: #333333;
+            }
+            .main{
+                background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(file:///C:/Users/SHYAM%20SUNDER/OneDrive/Desktop/htmlfiles/coder/images/Netflix-background.webp);
+                background-size: cover;
+                width: 100vw;
+                height: 100vh;
+            }
+            .nlogo{
+            margin-left: 50px;
+                margin-top: 10px;
+            }
+            .Eng{
+            background-color:black;
+                color:white;
+                outline: none;
+                border: 0.5px groove  white;
+                height:37px;
+                width:100px;  
+                position: absolute;
+                left:1250px;
+                top:30px;
+                
+            }
+            .fa-color{
+                color:white;
+                padding: 5px;
+            }
+            .signin{
+                background-color: red;
+                border-radius: 2px;
+                width: 90px;
+                height:37px;
+                outline: none;
+                border: none;
+                font-size: 15px;
+                position: absolute;
+                left:1380px;
+                top:30px;
+            }
+            .signin a{
+                text-decoration: none;
+                color: white;
+            }
+            .content{
+                text-align: center;
+                margin-top: 9em;
+            }
+            .content h1{
+                color:white;
+                font-size:4em;
+                font-family: 'Open Sans', sans-serif;
+            }
+            .content h6{
+                color:white;
+                font-size: 1.5em;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 100;
+                position: relative;
+                top:-40px;
+            }
+            .content p{
+                color: white;
+                font-size: 20px;
+                font-family: 'Roboto', sans-serif;
+                margin-top: -20px;
+                position: relative;
+                top:-40px;
+            }
+            .searchbut input[type=email]{
+                width:500px;
+                height:65px;
+                position: relative;
+                top:-30px;
+                padding: 10px;
+                outline: none;
+            }
+            .searchbut button{
+                height:65px;
+                width: 200px;
+                background-color: red;
+                color: white;
+                border: none;
+                outline: none;
+                font-size:25px;
+                position: relative;
+                top:-26px;
+                left:-4px;
+            }
+            .div2{
+                width:100vw;
+                height:400px;
+                background-color: black;
+                color:white;
+                margin-top:-35px;
+            }
+            .div2 img{
+                position: relative;
+                left:800px;
+                top:-150px;
+            }
+            .content2{
+                position: relative;
+                left:200px;
+                top:130px;
+                line-height:38px;
+            }
+            .div3{
+                width:100vw;
+                height: 400px;
+                background-color: black;
+                margin-top: 5px;
+            }
+            .div3 img{
+                position: relative;
+                top:70px;
+                left:200px;
+            }
+            .cont3{
+                position: relative;
+                left:800px;
+                top:-200px;
+            }
+            .cont3 p{
+                margin-top:-25px;
+            }
+            .div4{
+                width:100vw;
+                height: 500px;
+                background-color: black;
+                margin-top: -28px;
+            }
+            .div4 img{
+                position: relative;
+                left:800px;
+                top:-100px;
+            }
+            .cont4{  
+            position: relative;
+            left:200px;
+            top:140px;
+            }   
+            h1{
+                font-family: 'Roboto', sans-serif;
+                font-size:50px;;
+                color:white;    
+            }
+            p{
+                font-family: 'Roboto', sans-serif;
+                font-size:28px;;
+                color:white; 
+            }
+            .div5,.div6{
+                width: 100vw;
+                height: 500px;
+                background-color: black;
+                margin-top: 8px;
+            }
+            .div6{
+                height: 900px;
+            }
+            .div5 img{
+                position: relative;
+                left:250px;
+                top:50px;
+            }
+            .cont5{
+              position:relative;
+              left:700px;
+              top:-250px; 
+            }
+            .div6 h1{
+                margin-left:380px;
+                margin-top:8px;
+            }
+            .fa-style{
+                position:relative;
+                float:right;
+            }
+            .accordion {
+            background-color:#312E2E;
+            color:white;
+            cursor: pointer;
+            padding: 18px;
+            width: 850px;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 30px;
+            transition: 0.4s;
+            margin-left: 280px;
+            margin-top:10px;
+          }
+          .panel {
+            padding: 0 18px;
+          display: none;
+          background-color:#312E2E;
+          color:white;
+          overflow: hidden;
+          width:814px;
+          font-size: 25px;
+          margin-top: 1px;
+          margin-left: 280px;
+        }
+        .d6-cont{
+           text-align: center;
+           margin-left:-50px;
+        }
+        .d6-cont p{
+            font-size:20px;
+        }
+        </style>
+
+    </head>
+    <body>
+        <div class="netflex">
+            <div class="main">
+                <div clas="navbar">
+                    <img class="nlogo" src="images/netflix%20logo.png" width="180" height="70">
+                    <button class="Eng"><i class="fas fa-globe fa-color"></i>English<i class="fas fa-sort-down fa-color"></i></button>
+                    <button class="signin"><a href="">Sign in</a></button>
+                </div>
+                <div class="content">
+                    <h1>Unlimited movies, TV<br>shows and more.</h1>
+                    <h6>Watch anywhere. Cancel anytime.</h6>
+                    <p>Ready to watch? Enter your email to create or restart your membership.</p>
+                    <div class="searchbut">
+                        <input type="email" placeholder="Email address">
+                        <button>GetStarted<i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>  
+            </div>
+            <div class="div2">
+                <div class="content2">
+                <h1>Enjoy on your TV.</h1>
+                <p>Watch on smart TVs, PlayStation, Xbox,<br> Chromecast, Apple TV, Blu-ray players and <br>more.</p>
+               </div>
+                <img src="images/net img1.png" width="500" height="300">
+            </div>
+            <div class="div3">
+                <img src="images/net img2.png" width="320" height="320"> 
+                <div class="cont3">
+                    <h1>Download your shows<br>to watch offline.</h1>
+                    <p>Save your favourites easily and always have<br> something to watch.</p>
+                </div>
+            </div>
+            <div class="div4">
+                <div class="cont4">
+                    <h1>Watch everywhere.</h1>
+                    <p>Stream unlimited movies and TV shows on<br>your phone, tablet, laptop, and TV.</p>
+                </div>
+                    <img src="images/net img3.png" width="500" height="350">
+            </div>
+            <div class="div5">
+                <img src="images/net img4.png" width="400" height="350">
+                <div class="cont5">
+                    <h1>Create profiles for <br>children.</h1>
+                    <p>Send children on adventures with their<br> favourite characters in a space made just for <br>them—free with your membership.</p>
+                </div>
+            </div>
+            <div class="div6">
+                <br>
+                <h1>Frequently Asked Questions</h1>
+                <div class="q1">
+                    <button class="accordion">What is Netflex?<i class="fas fa-plus fa-style"></i></button>
+                        <div class="panel">
+                            <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more – on thousands of internet-connected devices.</p>
+                            <p> You can watch as much as you want, whenever you want, without a single ad – all for one low monthly price. There's always something new to discover, and new TV shows and movies are added every week!</p>
+                        </div>
+                    </div>
+                  <div class="q2">
+                        <button class="accordion">How much does Netflix cost?<i class="fas fa-plus fa-style"></i></button>
+                            <div class="panel">
+                                <p>Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from ₹ 199 to ₹ 799 a month. No extra costs, no contracts.</p>
+                            </div>
+                  </div>
+                  <div class="q3">
+                        <button class="accordion">Where can i watch?<i class="fas fa-plus fa-style"></i></button>
+                            <div class="panel">
+                                <p>Watch anywhere, anytime, on an unlimited number of devices. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.</p>
+                                <p>You can also download your favourite shows with the iOS, Android, or Windows 10 app. Use downloads to watch while you're on the go and without an internet connection. Take Netflix with you anywhere.</p>
+                             </div>
+                  </div>
+                  <div class="q4">
+                        <button class="accordion">How do i Cancel?<i class="fas fa-plus fa-style"></i></button>
+                             <div class="panel">
+                                <p>Netflix is flexible. There are no annoying contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees – start or stop your account anytime.</p>
+                            </div>
+                  </div>
+                  <div class="q5">
+                        <button class="accordion">What can i watch on Netflix<i class="fas fa-plus fa-style"></i></button>
+                            <div class="panel">
+                                <p>Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.</p>
+                            </div>
+                  </div>
+                  <div class="q6">
+                        <button class="accordion">Is Netflix good for kids?<i class="fas fa-plus fa-style"></i></button>
+                            <div class="panel">
+                                <p>The Netflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and films in their own space.</p>
+                                <p>Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don’t want kids to see.</p>
+                            </div>
+                  </div>
+                  <div class="d6-cont">
+                      <br>
+                      <p>Ready to watch? Enter your email to create or restart your membership.</p>
+                      <br> <br>   
+                      <div class="searchbut">
+                                <input type="email" placeholder="Email address">
+                                <button>GetStarted<i class="fas fa-chevron-right"></i></button>
+                            </div>
+                    </div>
+                </div>
+                <div class="footer">
+
+                </div>
+            </div>
+
+    </body>
+    <script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+
+</html>
