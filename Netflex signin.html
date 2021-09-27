@@ -1,6 +1,9 @@
 <html>
     <head>'
         <style>
+            *{
+                color:#B3B6B7;
+            }
             .main{
                 background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(file:///C:/Users/SHYAM%20SUNDER/OneDrive/Desktop/htmlfiles/coder/images/Netflix-background.webp);
                 background-size: cover;
@@ -11,6 +14,77 @@
             margin-left: 50px;
                 margin-top: 10px;
             }
+            .siginpage{
+                width: 450px;
+                height: 85%;
+                color:#F4F6F6;
+                background-color: black;
+                font-family: 'Roboto', sans-serif;
+                margin:auto;
+
+            }
+            .siginpage h1{
+                margin:50px;
+                color: white;
+                margin-left: 60px;
+            }
+            .ip{
+                width:300px;
+                height: 50px;
+                border-radius: 5px;
+                background-color:#424949 ;
+                color:#F4F6F7;
+                outline: none;
+                border:none;
+                margin-left:60px;
+                position: relative;
+                top:-15px;
+                font-size: 15px;
+                padding-left: 20px;
+            }
+            .signin-but{
+                background-color: red;
+                margin-top: 20px;
+                font-size: 20px;
+            }
+            .divvi{
+                display: flexbox;
+                position: relative;
+                left:60px;
+            }
+            .divvi span{
+                margin-left: 80px;
+            }
+            .fb{
+                margin-left: 60px;
+            }
+            .netflix h5{
+            margin-left: 60px;
+            font-size: 15px;
+            }
+            .netflix a{
+            position: relative;
+            left: 300px;
+            top: -42px;
+            text-decoration: none;
+            color:white;
+            }
+            .last{
+                font-size: 13px;
+                text-align:justify;
+                margin-left: 60px;
+                margin-top: -30px;
+            }
+            .last span a{
+                color: #454CEB ;
+                text-decoration: none;
+                font-size: 15px;
+                position: relative;
+                left: 150px;
+                top: -30px;
+
+
+            }
         </style>
     </head>
     <body>
@@ -19,8 +93,31 @@
                 <img class="nlogo" src="images/netflix%20logo.png" width="180" height="70">
             </div>
             <div class="siginpage">
+<br>
                 <h1>Sign In</h1>
-                
+                <input class="ip" type="email" placeholder="Email or phone number">
+                <br><br>
+                <input class="ip" type="password" placeholder="password">
+                <br>
+                <button class=" ip signin-but">Sign In</button><br>
+                <div class="divvi">
+                <input class="check" type="checkbox" value="Remember me" checked="checked">Remember me
+                <span>Need help?</span>
+                </div>
+                <br><br><br>
+                <div class="fb">
+                <img src="images/fb logo" width="15" height="15">
+                <span>Login with facebook </span>
+                </div>
+                <div class="netflix">
+                <h5>New to Netflix?</h5>
+                <a href="" >Sign up now.</a>
+                </div>
+                <div class="last">
+                <p>This page is protected by Google reCAPTCHA to<br> ensure you're not a bot.</p>
+                <span><a href="" >Learn more</a></span>
+                </div>
+
             </div>
     </div>
 </body>
